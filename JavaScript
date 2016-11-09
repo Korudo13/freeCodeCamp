@@ -1,0 +1,18 @@
+//Make Object Properties Private
+
+var Bike = function() {
+
+  // Only change code below this line.
+var gear = 1;
+  
+   this.setGear = function(shift){
+     gear = shift;
+  };
+  
+  this.getGear = function(){
+    return gear;
+  };
+};
+
+var myBike = new Bike();
+myBike.setGear(4);
