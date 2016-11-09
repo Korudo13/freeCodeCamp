@@ -1,5 +1,3 @@
-//Make Object Properties Private
-
 var Bike = function() {
 
   // Only change code below this line.
