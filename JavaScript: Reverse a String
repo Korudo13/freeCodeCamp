@@ -1,0 +1,17 @@
+/* started with:
+
+function reverseString(str) {
+  return str;
+
+}
+
+var arrayReverseString = reverseString("hello");
+arrayReverseString.split('').reverse().join('');
+*/
+
+
+//ended up with//
+
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
