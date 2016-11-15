@@ -1,0 +1,18 @@
+function finalizedString(string){
+  return string.split("").reverse().join("");
+}
+
+function palindrome(string) {
+  var findNonAlphaNumeric = "[^a-zA-Z0-9$]";
+  var regularExpression = new RegExp(findNonAlphaNumeric, 'g');
+  
+ string = string.replace(regularExpression, "").toLowerCase();
+  
+ if(string == finalizedString(string)){
+   return true;
+ } 
+ else{
+   return false;
+ }
+}
+  palindrome("racecar"); 
