@@ -1,0 +1,19 @@
+//determine the longest word in a sentence (done)
+// break the string down into an array (done)
+//do a loop to determine the longest word index (done)
+// return the longest index as an integer(done)
+
+function findLongestWord(str) {
+  var stringArray = str.split(" ");
+  var longestString = " ";
+  
+  for(var i = 0; i < stringArray.length; i++){
+    if(longestString.length < stringArray[i].length){
+      longestString = stringArray[i];
+    }
+  }
+  
+ return longestString.length;
+}
+
+findLongestWord("Proto Man is cooler than Mega Man");
