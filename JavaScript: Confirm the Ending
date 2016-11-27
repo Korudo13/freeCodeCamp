@@ -1,0 +1,9 @@
+//New Goal: Don't overthink things. Just solve the problem. (could have been done 2 minutes, took me an hour)
+
+function confirmEnding(str, target) {
+var targetLength = target.length;
+  
+  return str.substr(-targetLength) === target;
+}
+
+confirmEnding("There's an ice cream parade tomorrow", "tomorrow");
