@@ -1,4 +1,4 @@
-          // loop through each array (done)
+          // loop through each array, return in reverse numerical order (done)
 
 function largestOfFour(arr) {
   arr.forEach(function(arr1){
