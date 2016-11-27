@@ -1,0 +1,28 @@
+          // loop through each array (done)
+
+function largestOfFour(arr) {
+  arr.forEach(function(arr1){
+    return arr1.sort(function(a,b){
+      return b-a;
+    });
+  });
+  
+  
+            // loop through each sub-array, slice off non-0th indeces (done) 
+  
+ arr.forEach(function(arr1){
+    return arr1.splice(1, 3);
+  });
+  
+  
+  
+            //combine values of sub-arrays into a single array in order (done)
+  
+  arr = arr.reduce(function(arr1, arr2){
+    return arr1.concat(arr2);
+  });
+  
+  return arr;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
