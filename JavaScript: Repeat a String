@@ -1,0 +1,15 @@
+function repeatStringNumTimes(str, num) {
+  
+            // "? : : " is a shortened version of an if-else statement (very handy)    
+           // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+  
+           // code explanation: repeatedString --> if num is greater than 0, return str.repeat(num times), else return an empty string
+  
+  
+  var repeatedString = num > 0 ? str.repeat(num) : "";
+  return repeatedString;
+}
+
+repeatStringNumTimes("yarn ", 6);
+ 
+            //returns "yarn " "yarn " "yarn " "yarn " "yarn " "yarn "
