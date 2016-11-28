@@ -1,4 +1,4 @@
-//New Goal: Don't overthink things. Just solve the problem. (could have been done 2 minutes, took me an hour)
+//New Goal: Don't overthink things. Just solve the problem. 
 
 function confirmEnding(str, target) {
 var targetLength = target.length;
