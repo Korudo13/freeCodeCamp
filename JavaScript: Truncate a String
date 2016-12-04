@@ -1,0 +1,16 @@
+function truncateString(str, num) {
+
+ if(str.length > num && num > 3){
+ 
+   //count "..." as 3, subtract it from num
+   return str.slice(0, num-3) + "...";
+   
+ } else if(str.length > num && num <3){
+ 
+   //don't include "..." in the sliced count
+   return str.slice(0, num) + "...";
+ }
+  return str;
+}
+
+truncateString("A thread is not a sliced string.", 2);
