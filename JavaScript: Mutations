@@ -4,7 +4,7 @@ function mutation(arr) {
   var mutateSecond = arr[1].toLowerCase().split('');
   
  for(var i = 0; i < mutateSecond.length; i++){
-   if(mutateFirst.indexOf(mutateSecond[i]) < 0) // "-1" means there's no match in the search
+   if(mutateFirst.indexOf(mutateSecond[i]) < 0) // -1 means there's no match in the search
     return false;
   } 
   return true;
