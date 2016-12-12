@@ -1,0 +1,15 @@
+//create a second array to hold new values (done)
+// loop through first array (arr), increase by size (done)
+// add 
+//the subarrays should have "size" number of indeces (done)
+//return the subarrays by pushing sliced arr by from i to i's size (done)
+
+function chunkArrayInGroups(arr, size) {
+  var chunkedArr = [];
+  for(var i = 0; i < arr.length; i+= size){
+     chunkedArr.push(arr.slice(i, i+size));
+  }
+  return chunkedArr;
+}
+
+chunkArrayInGroups(["A bear had a crab battle", "He barely won", "Crab battles", "Didn't we do this before?", "Crabear"], 4); 
