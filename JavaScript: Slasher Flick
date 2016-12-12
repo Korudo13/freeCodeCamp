@@ -1,0 +1,7 @@
+function slasher(arr, howMany) {
+
+  var slashedArr = arr.splice(0, howMany);
+   return arr;
+}
+
+slasher(["Jason V.", "Freddy K.", "Michael M."], 1);
