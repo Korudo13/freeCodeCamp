@@ -1,0 +1,8 @@
+function destroyer(robots) {
+ var robotMasters = Array.from(arguments).slice(1);
+  return robots.filter(function(val){
+     return !robotMasters.includes(val)
+      });
+  }
+
+destroyer(["Blues", "Rock", "Roll", "Cut Man", "Guts Man", "Ice Man", "Bomb Man", "Fire Man", "Elec Man", "Time Man", "Oil Man"], "Blues", "Rock", "Roll", "Time Man", "Oil Man");
